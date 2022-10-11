@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+body {
+    margin: auto;
+    padding: 0;
+    font-family: 'Montserrat', 'Fraunces', serif, sans-serif;
+    font-size: 14px;
+    height: 900px;
+    max-width: 1440px;
+    background-color: hsl(30, 38%, 92%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* MAIN */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card:hover {
+    background-color: hsl(0, 29%, 97%);
+    transition: 0.6s;
+    /* opacity: 1.5; */
+    -webkit-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+#card {
+    transition: 0.6s;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    width: 650px;
+    height: 500px;
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    font-family: 'Fraunces';
+}
+
+#card #image_produto {
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+/* Retirando margin e padding padrões do figure para ficar idêntico a foto */
+#card figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilização da Div contendo as informações do produto */
+#informacao {
+    padding: 2.2rem;
+    text-align: left;
+}
+
+.text {
+    color: hsl(228, 12%, 48%);
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+#title {
+    font-size: 32px;
+}
+
+#description {
+    word-spacing: 1px;
+    line-height: 1.4;
+    font-size: 15px;
+}
+
+#perfume {
+    letter-spacing: 5px;
+}
+
+
+/* Estilização do preço */
+#preco {
+    color: hsl(158, 36%, 37%);
+    font-size: 34px;
+}
+
+#desconto {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+
+/* Estilização do botão */
+
+#botao {
+    padding: 15px 20px;
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* FOOTER */
+footer {
+    background-color: hsl(30, 38%, 92%);
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute; 
+    bottom: 5px;
+    width: 100%;
+    padding: 10px 0px;
+}
+.attribution { 
+    font-size: 15px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+/* RESPONSIVIDADE */
+
+@media only screen and (max-width: 700px) {
+    /* body {
+        position: relative;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    } */
+    #card {
+        display: flex;
+        flex-direction: column;
+    }
+    #card figure {
+        width: 100%;
+    }
+    #card #image_produto {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+    footer {
+        background-color: hsl(30, 18%, 84%);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
