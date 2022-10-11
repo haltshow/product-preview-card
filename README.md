@@ -26,8 +26,8 @@ Essa é uma foto de como ficou o desafio.
 
 ### Construído com
 
-- Semantic HTML5 markup
-- CSS custom properties
+- HTML
+- CSS 
 - Flexbox
 
 ## Autor

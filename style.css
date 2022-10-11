@@ -8,7 +8,6 @@ body {
     height: 900px;
     max-width: 1440px;
     background-color: hsl(30, 38%, 92%);
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,6 +97,7 @@ main {
 /* Estilização do botão */
 
 #botao {
+    cursor: pointer;
     padding: 15px 20px;
     width: 100%;
     background-color: hsl(158, 36%, 37%);
@@ -109,18 +109,12 @@ main {
 }
 
 /* FOOTER */
-footer {
-    background-color: hsl(30, 38%, 92%);
-    margin-right: auto;
-    margin-left: auto;
-    position: absolute; 
-    bottom: 5px;
-    width: 100%;
-    padding: 10px 0px;
-}
 .attribution { 
     font-size: 15px; 
-    text-align: center; 
+    text-align: center;
+    width: 100%;
+    height: 100px; 
+    margin-top: 75px;
 }
 
 .attribution a { 
@@ -138,6 +132,11 @@ footer {
         display: flex;
         flex-direction: column;
     } */
+    #card:hover {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
     #card {
         display: flex;
         flex-direction: column;
@@ -146,14 +145,12 @@ footer {
         width: 100%;
     }
     #card #image_produto {
+        background-image: url(images/image-product-mobile.jpg);
         height: 100%;
         width: 100%;
         border-radius: 10px 0 0 10px;
     }
     footer {
-        background-color: hsl(30, 18%, 84%);
-        position: fixed;
-        bottom: 0;
-        width: 100%;
+        display: none;
     }
 }
