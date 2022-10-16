@@ -47,15 +47,13 @@ main {
 
 #card #image_produto {
     height: 100%;
-    width: 100%;
+    width: auto;
     object-fit: cover;
     border-radius: 10px 0 0 10px;
 }
 
 /* Retirando margin e padding padrões do figure para ficar idêntico a foto */
-#card figure {
-    margin: 0;
-    padding: 0;
+#card picture {
     flex: 50%;
 }
 
@@ -131,7 +129,7 @@ main {
 
 /* RESPONSIVIDADE */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 650px) {
     #card:hover {
         -webkit-transform: scale(1);
         -ms-transform: scale(1);
@@ -148,6 +146,9 @@ main {
         height: 100%;
         width: 100%;
         border-radius: 10px 0 0 10px;
+    }
+    #card #informacao {
+        background-color: hsl(0, 0%, 100%);
     }
     footer {
         display: none;
