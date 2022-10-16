@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: auto;
     padding: 0;
@@ -23,7 +27,6 @@ main {
 #card:hover {
     background-color: hsl(0, 29%, 97%);
     transition: 0.6s;
-    /* opacity: 1.5; */
     -webkit-transform: scale(1.08);
     -ms-transform: scale(1.08);
     transform: scale(1.08);
@@ -44,6 +47,8 @@ main {
 
 #card #image_produto {
     height: 100%;
+    width: 100%;
+    object-fit: cover;
     border-radius: 10px 0 0 10px;
 }
 
@@ -51,12 +56,14 @@ main {
 #card figure {
     margin: 0;
     padding: 0;
+    flex: 50%;
 }
 
 /* Estilização da Div contendo as informações do produto */
 #informacao {
     padding: 2.2rem;
     text-align: left;
+    flex: 50%;
 }
 
 .text {
@@ -125,13 +132,6 @@ main {
 /* RESPONSIVIDADE */
 
 @media only screen and (max-width: 700px) {
-    /* body {
-        position: relative;
-    }
-    main {
-        display: flex;
-        flex-direction: column;
-    } */
     #card:hover {
         -webkit-transform: scale(1);
         -ms-transform: scale(1);
@@ -145,7 +145,6 @@ main {
         width: 100%;
     }
     #card #image_produto {
-        background-image: url(images/image-product-mobile.jpg);
         height: 100%;
         width: 100%;
         border-radius: 10px 0 0 10px;
